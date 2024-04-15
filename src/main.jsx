@@ -7,7 +7,7 @@ import { ThemeProvider } from './Theme.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename='/Portfolio'>
       <ThemeProvider>
         <App />
       </ThemeProvider>
