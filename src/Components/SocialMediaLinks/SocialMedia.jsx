@@ -1,5 +1,5 @@
 let Socials=[
-    {id:1, text: 'Github', icon:'fa-brands fa-github', href:'http://github/hala-alkeddeh'},
+    {id:1, text: 'Github', icon:'fa-brands fa-github', href:'https://github.com/Hala-Alkeddeh'},
     {id:2, text: 'Facebook', icon:'fa-brands fa-facebook', href:'https://facebook.com/hala.alkeddeh.7'},
     {id:3, text: 'Instagram', icon:'fa-brands fa-instagram', href:'https://instagram.com/7ala_alkeddeh'},
     {id:4, text: 'Telegram', icon:'fa-brands fa-telegram', href:'https://t.me/Hala_Kd'},
