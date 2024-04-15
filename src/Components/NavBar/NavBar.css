@@ -1,0 +1,38 @@
+nav{
+    transition: all 0.4s;
+    width: 100%;
+}
+.navbarScroll{
+    @apply shadow-xl md:px-12 p-5  border-b-2 border-pink;
+    transition: all 0.4s;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    cursor: pointer;
+    background: none;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    @apply bg-gradient-to-r from-pink to-purple; 
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+nav ul a:hover::after{
+    height: 2.5px;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.active::after{
+    height: 2.5px;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

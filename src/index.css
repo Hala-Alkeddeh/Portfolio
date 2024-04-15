@@ -1,0 +1,48 @@
+/* @tailwind base; */
+@import  "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.title{
+  @apply gradiant text-transparent bg-clip-text text-2xl md:text-[40px] font-semibold hover:bg-gradient-to-l pb-2 border-b-[3px] border-pink cursor-pointer;
+}
+.titleSecondry{
+  @apply gradiant text-transparent bg-clip-text text-2xl md:text-3xl font-semibold hover:bg-gradient-to-l;
+}
+.dark{
+  @apply bg-darkColor;
+  @apply text-lightColor
+
+}
+.light{
+  @apply bg-lightColor;
+  @apply text-darkColor ;
+}
+.bgLightDark{
+  @apply bg-lightColor dark:bg-darkColor;
+}
+.gradiant{
+  @apply bg-gradient-to-r from-pink to-purple;
+}
+.centered{
+  @apply flex items-center justify-center ;
+}
+.item:hover .itemBody{
+  right: 0;
+  transition: 0.7s;
+}
+/* 
+purple #b772ff
+pink #ec83bd
+peachy #f991a3
+blue #5ca5a7
+*/
